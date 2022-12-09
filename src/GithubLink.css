@@ -1,0 +1,15 @@
+.sourceCode {
+  font-family: "Source Code Pro", monospace;
+  margin-top: 1em;
+  text-align: center;
+  font-size: 13px;
+}
+a.git:link,
+a.git:visited {
+  text-decoration: none;
+  color: black;
+}
+
+a.git:hover {
+  color: #e8cfc9;
+}

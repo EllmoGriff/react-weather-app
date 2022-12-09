@@ -1,0 +1,62 @@
+form-control,
+.city {
+  display: block;
+  margin: auto;
+}
+#search-city {
+  margin-top: 1rem;
+}
+.form-control {
+  display: block;
+  margin: auto;
+  font-family: "Source Code Pro", monospace;
+  border-color: #f7ded3;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 300;
+  text-align: center;
+  border-width: 0.2rem;
+  border-radius: 20rem;
+  width: 13rem;
+}
+
+.form-control:focus {
+  border-color: black;
+  box-shadow: 0px 0px 0px #f7ded3;
+}
+
+input[type="text"] {
+  background-color: white;
+}
+
+.btn1 {
+  margin-right: 1em;
+}
+.btn2 {
+  width: 2em;
+}
+.btn1,
+.btn2 {
+  border-radius: 100%;
+  border-style: solid;
+  margin-top: 1em;
+  border-color: #f7ded3;
+  border-width: 0.2rem;
+}
+
+.btn1:hover,
+.btn2:hover {
+  background-color: black;
+  color: #fefbf3;
+  border-color: #fefbf3;
+}
+
+.btn1:focus,
+.btn2:focus {
+  background-color: white;
+  border-color: #f7ded3;
+  color: black;
+}
+.buttons {
+  text-align: center;
+}

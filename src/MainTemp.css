@@ -1,0 +1,38 @@
+.moon {
+  text-align: center;
+}
+#icon {
+  display: block;
+  margin: auto;
+  width: 90px;
+}
+.temp {
+  font-size: 5rem;
+  text-align: center;
+  position: relative;
+  top: -2rem;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+}
+.celsius-and-fahrenheit {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.25rem;
+  position: relative;
+  top: -2em;
+  right: 0.75em;
+  font-family: "Source Code Pro", monospace;
+}
+.f {
+  text-align: center;
+}
+a.tempC:link,
+a.tempC:visited {
+  text-decoration: none;
+  color: black;
+}
+a.tempF:link,
+a.tempF:visited {
+  text-decoration: none;
+  color: black;
+}
