@@ -1,4 +1,31 @@
-form-control,
+.mood {
+  font-family: "Source Code Pro", monospace;
+  color: #fefbf3;
+  text-align: center;
+  font-size: 1rem;
+  position: relative;
+  top: -2em;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+.deets {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  color: #fefbf3;
+  font-weight: 700;
+}
+.feel,
+.wind,
+.humid {
+  font-weight: bold;
+  color: black;
+  font-size: 1rem;
+  font-family: "Source Code Pro", monospace;
+}
+
+
+
+.form-control,
 .city {
   display: block;
   margin: auto;

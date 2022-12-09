@@ -1,7 +1,12 @@
-import React from "react";
+import React, {useState} from "react";
 import "./MainTemp.css";
 
 export default function MainTemp() {
+// let [temperature, setTemperature] = useState("");
+
+// function showTemperature(response){
+//   setTemperature(response.data.main.temp);
+// }
   return (
     <div className="MainTemp">
       <div className="moon">
