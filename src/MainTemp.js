@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 import "./MainTemp.css";
 
 export default function MainTemp() {
@@ -20,14 +20,14 @@ export default function MainTemp() {
         0°
       </div>
       <div className="celsius-and-fahrenheit">
-        <a className="tempC" href="#">
+        <button className="tempC" >
           °C
-        </a>
+        </button>
         <span className="f">
           /
-          <a className="tempF" href="#">
+          <button className="tempF">
             °F
-          </a>
+          </button>
         </span>
       </div>
     </div>

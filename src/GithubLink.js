@@ -9,7 +9,7 @@ export default function GithubLink() {
           href="https://github.com/EllmoGriff/react-weather-app.git"
           target="_blank"
           className="git"
-          rel="noreferer"
+          rel="noreferrer"
         >
           Open-source code
         </a>{" "}

@@ -14,25 +14,30 @@
   font-weight: 700;
   font-family: "Montserrat", sans-serif;
 }
-.celsius-and-fahrenheit {
+ .tempC,
+ .tempF{
+  background-color: transparent;
+  border: none;
+   font-family: "Source Code Pro", monospace;
+   font-weight: 600
+}
+ .celsius-and-fahrenheit {
   text-align: center;
-  font-weight: bold;
   font-size: 1.25rem;
   position: relative;
   top: -2em;
   right: 0.75em;
-  font-family: "Source Code Pro", monospace;
 }
 .f {
   text-align: center;
 }
-a.tempC:link,
-a.tempC:visited {
+button.tempC:link,
+button.tempC:visited {
   text-decoration: none;
   color: black;
 }
-a.tempF:link,
-a.tempF:visited {
+button.tempF:link,
+button.tempF:visited {
   text-decoration: none;
   color: black;
 }
