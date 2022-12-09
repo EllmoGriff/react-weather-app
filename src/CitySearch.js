@@ -4,7 +4,7 @@ import axios from "axios";
 
 export default function CitySearch() {
 	let [city, setCity] = useState("");
-	let [temperature, setTemperature] = useState("");
+	// let [temperature, setTemperature] = useState("");
 	let [description, setDescription] = useState("");
 	let [humidity, setHumidity] = useState("");
 	let [wind, setWind] = useState("");
@@ -34,7 +34,7 @@ let details =(<div className="MainTempDetails">
 			</div>);
 			
 	function showTemperature(response) {
-		setTemperature(response.data.main.temp);
+		// setTemperature(response.data.main.temp);
 		setDescription(response.data.weather[0].description);
 		setHumidity(response.data.main.humidity);
 		setWind(Math.round(response.data.wind.speed));
