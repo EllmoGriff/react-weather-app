@@ -1,0 +1,19 @@
+.tempC,
+.tempF {
+    background-color: transparent;
+    border: none;
+    font-family: "Source Code Pro", monospace;
+    font-weight: 600
+}
+
+.celsius-and-fahrenheit {
+    text-align: center;
+    font-size: 1.25rem;
+    position: relative;
+    top: -2em;
+    right: 0.75em;
+}
+
+.f {
+    text-align: center;
+}

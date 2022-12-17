@@ -1,7 +1,7 @@
 .container-sm {
   background-image: linear-gradient(#f7ded3, #4f3d65);
   margin-top: 5em;
-  max-width: 28rem;
+  max-width: 28.5rem;
   padding: 2.5em 0.3em 0.25em 0.3em;
   border-radius: 2rem;
 }
@@ -9,9 +9,11 @@
 .night-background {
   background-image: linear-gradient(#f7ded3, #4f3d65);
 }
+
 .sun-background {
   background-image: linear-gradient(#f7c3c3, #eeb37b);
 }
+
 .rain-background {
   background-image: linear-gradient(#d5eff4, #5a6965);
 }

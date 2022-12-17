@@ -1,11 +1,9 @@
-.moon {
-  text-align: center;
-}
 #icon {
   display: block;
   margin: auto;
-  width: 90px;
+  width: 5rem;
 }
+
 .temp {
   font-size: 5rem;
   text-align: center;
@@ -14,30 +12,160 @@
   font-weight: 700;
   font-family: "Montserrat", sans-serif;
 }
- .tempC,
- .tempF{
+
+.tempC,
+.tempF {
   background-color: transparent;
   border: none;
-   font-family: "Source Code Pro", monospace;
-   font-weight: 600
+  font-family: "Source Code Pro", monospace;
+  font-weight: 600
 }
- .celsius-and-fahrenheit {
+
+.celsius-and-fahrenheit {
   text-align: center;
   font-size: 1.25rem;
   position: relative;
   top: -2em;
   right: 0.75em;
 }
+
 .f {
   text-align: center;
 }
+
 button.tempC:link,
 button.tempC:visited {
   text-decoration: none;
   color: black;
 }
+
 button.tempF:link,
 button.tempF:visited {
   text-decoration: none;
   color: black;
+}
+
+.mood {
+  font-family: "Source Code Pro", monospace;
+  color: #fefbf3;
+  text-align: center;
+  font-size: 1rem;
+  position: relative;
+  top: -2em;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+.deets {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  color: #fefbf3;
+  font-weight: 700;
+}
+
+.feel,
+.wind,
+.humid {
+  font-weight: bold;
+  color: black;
+  font-size: 1rem;
+  font-family: "Source Code Pro", monospace;
+}
+
+#degree,
+#mph,
+#percent {
+  font-size: 0.9rem;
+}
+
+.form-control,
+.city {
+  display: block;
+  margin: auto;
+}
+
+#search-city {
+  margin-top: 1rem;
+}
+
+.form-control {
+  display: block;
+  margin: auto;
+  font-family: "Source Code Pro", monospace;
+  border-color: #f7ded3;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: center;
+  border-width: 0.15rem;
+  border-radius: 20rem;
+  width: 13rem;
+}
+
+.form-control:focus {
+  border-color: black;
+  box-shadow: 0px 0px 0px #f7ded3;
+}
+
+input[type="text"] {
+  background-color: white;
+}
+
+.btn1 {
+  margin-right: 1em;
+}
+
+.btn2 {
+  width: 2em;
+}
+
+.btn1,
+.btn2 {
+  border-radius: 100%;
+  border-style: solid;
+  margin-top: 1em;
+  border-color: #f7ded3;
+  border-width: 0.2rem;
+}
+
+.btn1:hover,
+.btn2:hover {
+  background-color: black;
+  color: #fefbf3;
+  border-color: #fefbf3;
+}
+
+.btn1:focus,
+.btn2:focus {
+  background-color: white;
+  border-color: #f7ded3;
+  color: black;
+}
+
+.buttons {
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+h2 {
+  position: relative;
+  top: -0.5em;
+  font-size: 1rem;
+  text-align: center;
+  font-family: "Source Code Pro", monospace;
+  font-weight: 600;
+  color: #fefbf3;
+}
+
+.city {
+  text-align: center;
+  display: block;
+  margin: auto;
 }
