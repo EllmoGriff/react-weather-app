@@ -1,42 +1,49 @@
-import React, { useState } from "react";
+import React from "react";
 
 export default function TimeAndDate(props) {
-  let days = [
-    "Sunday",
-    "Monday",
-    "Tuesday",
-    "Wednesday",
-    "Thursday",
-    "Friday",
-    "Saturday",
-  ];
-  let months = [
-    "Jan",
-    "Feb",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July",
-    "Aug",
-    "Sep",
-    "Oct",
-    "Nov",
-    "Dec",
-  ];
+  console.log(props.date);
+  // let days = [
+  //   "Sunday",
+  //   "Monday",
+  //   "Tuesday",
+  //   "Wednesday",
+  //   "Thursday",
+  //   "Friday",
+  //   "Saturday",
+  // ];
 
-  let month = months[props.date.getMonth()];
-  let day = days[props.date.getDay()];
-  let date = props.date.getUTCDate();
+  // let months = [
+  //   "Jan",
+  //   "Feb",
+  //   "March",
+  //   "April",
+  //   "May",
+  //   "June",
+  //   "July",
+  //   "Aug",
+  //   "Sep",
+  //   "Oct",
+  //   "Nov",
+  //   "Dec",
+  // ];
 
-  let hours = props.date.getHours();
-  if (hours < 10) hours = `0${hours}`;
+  // let month = months[props.date.getMonth()];
+  // let day = days[props.date.getDay()];
+  // let date = props.date.getUTCDate();
 
-  let minutes = props.date.getMinutes();
-  if (minutes < 10) minutes = `0${minutes}`;
+  // let hours = props.date.getHours();
+  // if (hours < 10) hours = `0${hours}`;
 
-  let ampm = hours >= 12 ? "pm" : "am";
+  // let minutes = props.date.getMinutes();
+  // if (minutes < 10) minutes = `0${minutes}`;
 
-  return <div>{day} {date} {month} {hours}:{minutes}{ampm}</div>
+  // let ampm = hours >= 12 ? "pm" : "am";
+  // console.log(props.date)
+  // return (
+  //   <div>
+  //     {day} {date} {month} {hours}:{minutes}{ampm}
+  //   </div>
+  // )
+
 }
 

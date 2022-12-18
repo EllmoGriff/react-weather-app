@@ -1,17 +1,18 @@
 import React, { useState } from "react";
 import TimeAndDate from "./TimeAndDate";
-import FahrenheitToCelcius from "./FahrenheitToCelcius";
+import FahrenheitToCelsius from "./FahrenheitToCelsius";
+import WeatherIcon from "./WeatherIcon"
 import axios from "axios";
 import "./MainTemp.css";
 
 
-export default function MainTemp() {
+export default function MainTemp(props) {
 	let [loaded, setLoaded] = useState(false);
 	let [weatherData, setWeatherData] = useState("");
 	let [city, setCity] = useState("");
 
 	let details = (<div className="MainTempDetails">
-		<h1 id="city">{city}</h1>
+		<h1 id="city">{weatherData.city}</h1>
 		<header>
 			<h2>
 				<span className="date" id="current-date">
@@ -23,16 +24,11 @@ export default function MainTemp() {
 		</header>
 
 		<div className="weather-icon">
-			<img
-				src={`http://openweathermap.org/img/w/${weatherData.icon}.png`}
-				id="icon"
-				alt="Weather icons"
-			/>
+			<div className="icon">
+				<WeatherIcon code={weatherData.icon} />
+			</div>
 		</div>
-		<div className="temp" id="current-temp">
-			{weatherData.temperature}°
-		</div>
-		<FahrenheitToCelcius />
+		<FahrenheitToCelsius celsius={weatherData.temperature} />
 		<div className="mood" id="description">
 			{weatherData.description}
 		</div>
@@ -63,6 +59,7 @@ export default function MainTemp() {
 			realFeel: Math.round(response.data.main.feels_like),
 			description: response.data.weather[0].description,
 			date: new Date(response.data.dt * 1000),
+			city: response.data.name,
 		})
 	}
 

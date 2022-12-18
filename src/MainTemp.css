@@ -1,7 +1,6 @@
-#icon {
-  display: block;
-  margin: auto;
-  width: 5rem;
+.icon {
+  text-align: center;
+  padding: 1rem
 }
 
 .temp {
