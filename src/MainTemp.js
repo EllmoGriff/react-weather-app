@@ -67,7 +67,6 @@ export default function MainTemp() {
 			axios.get(url).then(showTemperature);
 			setLoaded(true);
 		}
-
 	}
 
 	function onGeoLocation(event) {

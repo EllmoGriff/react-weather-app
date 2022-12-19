@@ -3,7 +3,7 @@ import "./FahrenheitToCelsius.css"
 
 export default function FahrenheitToCelcius(props) {
     const [unit, setUnit] = useState(`celsius`);
-
+    console.log(props.celsius)
     function convertToCelsius(event) {
         event.preventDefault();
         setUnit("celsius")
