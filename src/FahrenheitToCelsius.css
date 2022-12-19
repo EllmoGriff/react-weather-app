@@ -10,10 +10,22 @@
     text-align: center;
     font-size: 1.25rem;
     position: relative;
-    top: -2em;
-    right: 0.75em;
+    top: -2.5em;
+    right: 0.25em;
 }
 
 .f {
     text-align: center;
+}
+
+button.tempC:link,
+button.tempC:visited {
+    text-decoration: none;
+    color: black;
+}
+
+button.tempF:link,
+button.tempF:visited {
+    text-decoration: none;
+    color: black;
 }

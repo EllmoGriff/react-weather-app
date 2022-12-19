@@ -6,7 +6,7 @@ import axios from "axios";
 import "./MainTemp.css";
 
 
-export default function MainTemp(props) {
+export default function MainTemp() {
 	let [loaded, setLoaded] = useState(false);
 	let [weatherData, setWeatherData] = useState("");
 	let [city, setCity] = useState("");
@@ -15,14 +15,9 @@ export default function MainTemp(props) {
 		<h1 id="city">{weatherData.city}</h1>
 		<header>
 			<h2>
-				<span className="date" id="current-date">
-					<TimeAndDate date={weatherData.date} />
-				</span>
-				<span className="time" id="current-time">
-				</span>
+				<TimeAndDate date={weatherData.date} />
 			</h2>
 		</header>
-
 		<div className="weather-icon">
 			<div className="icon">
 				<WeatherIcon code={weatherData.icon} />
@@ -62,6 +57,8 @@ export default function MainTemp(props) {
 			city: response.data.name,
 		})
 	}
+
+
 
 	function onSearch(event) {
 		event.preventDefault();
