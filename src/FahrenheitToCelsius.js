@@ -3,7 +3,6 @@ import "./FahrenheitToCelsius.css"
 
 export default function FahrenheitToCelcius(props) {
     const [unit, setUnit] = useState(`celsius`);
-    console.log(props.celsius)
     function convertToCelsius(event) {
         event.preventDefault();
         setUnit("celsius")
@@ -16,7 +15,7 @@ export default function FahrenheitToCelcius(props) {
         return (
             <div className="weatherTemp">
                 <div className="temp" id="current-temp">
-                    {Math.round(props.celsius)}°
+                    {Math.round(props.celsius)}
                 </div>
                 <div className="celsius-and-fahrenheit">
                     <button className="tempC" >

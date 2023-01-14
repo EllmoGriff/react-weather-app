@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import TimeAndDate from "./TimeAndDate";
 import FahrenheitToCelsius from "./FahrenheitToCelsius";
 import WeatherIcon from "./WeatherIcon"
+import Forecast from "./Forecast";
 import axios from "axios";
 import "./MainTemp.css";
 
@@ -20,7 +21,7 @@ export default function MainTemp() {
 		</header>
 		<div className="weather-icon">
 			<div className="icon">
-				<WeatherIcon code={weatherData.icon} />
+				<WeatherIcon code={weatherData.icon} size={70} />
 			</div>
 		</div>
 		<FahrenheitToCelsius celsius={weatherData.temperature} />
@@ -43,10 +44,13 @@ export default function MainTemp() {
 				</div>
 			</div>
 		</div>
-	</div>);
+		<Forecast coordinates={weatherData.coord} />
+	</div >);
 
 	function showTemperature(response) {
+
 		setWeatherData({
+			coord: response.data.coord,
 			temperature: Math.round(response.data.main.temp),
 			icon: response.data.weather[0].icon,
 			wind: Math.round(response.data.wind.speed),

@@ -26,7 +26,6 @@ let months = [
 ];
 
 export default function TimeAndDate(props) {
-	console.log(props.date)
 	if (props.date === undefined) {
 		return <div> </div>
 	}

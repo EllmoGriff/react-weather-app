@@ -1,0 +1,12 @@
+.sTemp,
+.day {
+    font-family: "Source Code Pro", monospace;
+    color: #fefbf3;
+    font-weight: 600;
+}
+
+.forecast {
+    max-width: 90%;
+    margin: auto;
+    text-align: center;
+}
