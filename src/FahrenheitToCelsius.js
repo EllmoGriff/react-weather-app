@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./FahrenheitToCelsius.css"
 
 export default function FahrenheitToCelcius(props) {
