@@ -74,8 +74,6 @@ export default function MainTemp() {
 		})
 	}
 
-
-
 	function onSearch(event) {
 		event.preventDefault();
 		if (city.length > 0) {
@@ -83,10 +81,6 @@ export default function MainTemp() {
 			axios.get(url).then(showTemperature);
 			setLoaded(true);
 		}
-	}
-
-	function onGeoLocation(event) {
-		event.preventDefault();
 	}
 
 	function updateCity(event) {
@@ -111,13 +105,6 @@ export default function MainTemp() {
 				className="btn1 btn-light"
 			>
 				<i className="fa-solid fa-magnifying-glass"></i>
-			</button>
-			<button
-				type="submit"
-				className="btn2 btn-light"
-				onClick={onGeoLocation}
-			>
-				<i className="fa-solid fa-location-dot"></i>
 			</button>
 		</div>
 	</form>);
