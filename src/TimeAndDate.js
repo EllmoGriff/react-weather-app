@@ -47,5 +47,5 @@ function formatTimeAndDate(date) {
 
 	let ampm = hours >= 12 ? "pm" : "am";
 
-	return (<div>{day} {currentDate} {month} {hours}: {minutes} {ampm}</div>)
+	return (<div>{day} {currentDate} {month} {hours}:{minutes}{ampm}</div>)
 }

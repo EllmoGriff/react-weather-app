@@ -11,6 +11,22 @@ export default function MainTemp() {
 	let [loaded, setLoaded] = useState(false);
 	let [weatherData, setWeatherData] = useState("");
 	let [city, setCity] = useState("");
+	let [unit, setUnit] = useState(`celsius`);
+
+	function handleUnitChange(u) {
+		setUnit(u);
+	}
+
+	function realFeelFahren() {
+		let temp = weatherData.realFeel;
+		if (unit === `fahrenheit`) {
+			temp = Math.round((temp * 9 / 5) + 32);
+			return `${temp}°F`
+		} else {
+			temp = Math.round(temp);
+			return `${temp}°C`
+		}
+	}
 
 	let details = (<div className="MainTempDetails">
 		<h1 id="city">{weatherData.city}</h1>
@@ -24,7 +40,7 @@ export default function MainTemp() {
 				<WeatherIcon code={weatherData.icon} size={70} />
 			</div>
 		</div>
-		<FahrenheitToCelsius celsius={weatherData.temperature} />
+		<FahrenheitToCelsius celsius={weatherData.temperature} unit={unit} onUnitChange={handleUnitChange} />
 		<div className="mood" id="description">
 			{weatherData.description}
 		</div>
@@ -32,7 +48,7 @@ export default function MainTemp() {
 			<div className="row">
 				<div className="col-sm-4">
 					<span className="feel"> Real feel </span>
-					<span id="degree">{weatherData.realFeel}°</span>
+					<span id="degree">{realFeelFahren()}</span>
 				</div>
 				<div className="col-sm-4">
 					<span className="wind">Wind </span>
@@ -44,11 +60,10 @@ export default function MainTemp() {
 				</div>
 			</div>
 		</div>
-		<Forecast coordinates={weatherData.coord} />
+		<Forecast coordinates={weatherData.coord} unit={unit} />
 	</div >);
 
 	function showTemperature(response) {
-
 		setWeatherData({
 			coord: response.data.coord,
 			temperature: Math.round(response.data.main.temp),

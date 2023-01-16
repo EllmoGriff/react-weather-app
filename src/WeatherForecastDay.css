@@ -5,6 +5,23 @@
     font-weight: 600;
 }
 
+.sTemp,
+.minTemp {
+    font-size: 0.85rem;
+}
+
+.minTemp {
+    font-weight: 300;
+}
+
+.faren,
+.cels {
+    font-size: 3rem;
+    position: relative;
+    bottom: 1rem;
+
+}
+
 .forecast {
     max-width: 90%;
     margin: auto;
