@@ -29,7 +29,7 @@ export default function Forecast(props) {
 					if (index > 0 && index < 7) {
 						return (
 							< section className="forecast" key={index}>
-								<WeatherForecastDay data={dailyForecast} unit={props.unit} />
+								<WeatherForecastDay data={dailyForecast} displayTemp={props.displayTemp} />
 							</section >
 						);
 					} else {

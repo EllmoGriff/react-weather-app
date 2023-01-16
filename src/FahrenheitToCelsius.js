@@ -17,7 +17,7 @@ export default function FahrenheitToCelcius(props) {
         return (
             <div className="weatherTemp">
                 <div className="temp" id="current-temp">
-                    {Math.round(props.celsius)}<span className="cels">°C</span>
+                    {props.displayTemp(props.celsius, true)}<span className="cels">°C</span>
                 </div>
                 <div className="celsius-and-fahrenheit">
                     <button className="tempC" >
@@ -34,11 +34,10 @@ export default function FahrenheitToCelcius(props) {
         )
 
     } else {
-        let fahrenheit = (props.celsius * 9 / 5) + 32
         return (
             < div className="weatherTemp" >
                 <div className="temp" id="current-temp">
-                    {Math.round(fahrenheit)}<span className="faren">°F</span>
+                    {props.displayTemp(props.celsius, true)}<span className="faren">°F</span>
                 </div>
                 <div className="celsius-and-fahrenheit">
                     <button className="tempC" onClick={convertToCelsius} >
