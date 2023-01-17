@@ -91,6 +91,7 @@ input[type="text"] {
 }
 
 .btn1 {
+  background-color: #ffff;
   border-radius: 10rem;
   padding: 0.5rem;
   border-style: solid;
