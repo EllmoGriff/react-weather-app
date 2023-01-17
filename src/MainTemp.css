@@ -3,7 +3,7 @@
 }
 
 .temp {
-  font-size: clamp(4rem, 10vw, 5rem);
+  font-size: clamp(3.5rem, 10vw, 4rem);
   text-align: center;
   position: relative;
   top: -2rem;
@@ -40,17 +40,6 @@
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .btn1:hover {
-    background-color: black;
-    color: #fefbf3;
-    border-color: #fefbf3;
-  }
-
-  .btn1:focus {
-    background-color: white;
-    border-color: #f7ded3;
-    color: black;
-  }
 }
 
 .feel,
@@ -102,7 +91,8 @@ input[type="text"] {
 }
 
 .btn1 {
-  border-radius: 100%;
+  border-radius: 10rem;
+  padding: 0.5rem;
   border-style: solid;
   margin-top: 1em;
   border-color: #f7ded3;
@@ -135,4 +125,23 @@ h2 {
   text-align: center;
   display: block;
   margin: auto;
+}
+
+
+@media (min-width:500px) {
+  .btn1:hover {
+    background-color: black;
+    color: #fefbf3;
+    border-color: #fefbf3;
+  }
+
+  .btn1:focus {
+    background-color: white;
+    border-color: #f7ded3;
+    color: black;
+  }
+
+  .btn1:visited {
+    color: black;
+  }
 }

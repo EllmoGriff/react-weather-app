@@ -20,12 +20,12 @@ export default function FahrenheitToCelcius(props) {
                     {props.displayTemp(props.celsius, true)}<span className="cels">°C</span>
                 </div>
                 <div className="celsius-and-fahrenheit">
-                    <button className="tempC" >
+                    <button className="tempC blueLinkFix" >
                         °C
                     </button>
                     <span className="f">
                         {" "} |
-                        <button className="tempF" onClick={convertToFahrenheit}>
+                        <button className="tempF blueLinkFix" onClick={convertToFahrenheit}>
                             °F
                         </button>
                     </span>

@@ -18,14 +18,15 @@
     text-align: center;
 }
 
-button.tempC:link,
-button.tempC:visited {
+button.blueLinkFix {
+    color: #0000 !important;
     text-decoration: none;
-    color: black;
 }
 
+button.tempC:link,
+button.tempC:visited,
 button.tempF:link,
 button.tempF:visited {
-    text-decoration: none;
+    text-decoration: none !important;
     color: black;
 }

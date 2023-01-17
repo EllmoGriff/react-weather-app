@@ -102,7 +102,7 @@ export default function MainTemp() {
 				type="submit"
 				id="searchButton"
 				onClick={onSearch}
-				className="btn1 btn-light"
+				className="btn1"
 			>
 				<i className="fa-solid fa-magnifying-glass"></i>
 			</button>
