@@ -41,17 +41,17 @@ export default function MainTemp() {
 		<div className="mood" id="description">
 			{weatherData.description}
 		</div>
-		<div className="container text-center deets">
-			<div className="row">
-				<div className="col-sm-4">
+		<div className="container deets">
+			<div className="row deets-grid">
+				<div className="col">
 					<span className="feel"> Real feel </span>
 					<span id="degree">{displayTemp(weatherData.realFeel)}</span>
 				</div>
-				<div className="col-sm-4">
+				<div className="col">
 					<span className="wind">Wind </span>
 					<span id="mph">{weatherData.wind} mph</span>
 				</div>
-				<div className="col-sm-4">
+				<div className="col">
 					<span className="humid">Humidity </span>
 					<span id="percent">{weatherData.humidity}%</span>
 				</div>

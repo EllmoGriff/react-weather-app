@@ -3,10 +3,11 @@
 }
 
 .temp {
-  font-size: 5rem;
+  font-size: clamp(4rem, 10vw, 5rem);
   text-align: center;
   position: relative;
   top: -2rem;
+  padding-top: 1rem;
   font-weight: 700;
   font-family: "Montserrat", sans-serif;
 }
@@ -23,13 +24,33 @@
   font-weight: 600;
 }
 
-.deets {
+.deets-grid {
+  display: grid;
+  text-align: center;
   font-family: "Montserrat", sans-serif;
   font-size: 1rem;
   color: #fefbf3;
   font-weight: 700;
   position: relative;
-  top: -1em;
+  top: -2rem;
+}
+
+@media (min-width: 50em) {
+  .deets-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .btn1:hover {
+    background-color: black;
+    color: #fefbf3;
+    border-color: #fefbf3;
+  }
+
+  .btn1:focus {
+    background-color: white;
+    border-color: #f7ded3;
+    color: black;
+  }
 }
 
 .feel,
@@ -88,24 +109,12 @@ input[type="text"] {
   border-width: 0.2rem;
 }
 
-.btn1:hover {
-  background-color: black;
-  color: #fefbf3;
-  border-color: #fefbf3;
-}
-
-.btn1:focus {
-  background-color: white;
-  border-color: #f7ded3;
-  color: black;
-}
-
 .buttons {
   text-align: center;
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: clamp(3rem, 10vw, 4.5rem);
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;

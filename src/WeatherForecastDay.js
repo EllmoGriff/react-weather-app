@@ -31,13 +31,13 @@ export default function WeatherForecastDay(props) {
 
     return (
         <div className="forecast">
-            <div className="row">
-                <div className="col-sm-4 day">{day()}</div>
-                <div className="col-sm-4 small-icon">
+            <div className="row details-grid">
+                <div className="col day">{day()}</div>
+                <div className="col small-icon">
                     <WeatherIcon code={props.data.weather[0].icon} size={28} />
                 </div>
-                <div className="col-sm-4 sTemp">
-                    {maxTemp()} / <span className="minTemp">{minTemp()}</span>
+                <div className="col sTemp">
+                    {maxTemp(true)}/<span className="minTemp">{minTemp()}</span>
                 </div>
             </div>
         </div>)

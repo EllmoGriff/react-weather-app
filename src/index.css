@@ -1,7 +1,8 @@
 .container-sm {
-  background-image: linear-gradient(#f7ded3, #4f3d65);
-  margin-top: 5em;
-  max-width: 30rem;
+
+  background: linear-gradient(to right, #c1c161 0%, #c1c161 0%, #d4d4b1 100%);
+  margin-top: 3em;
+  width: clamp(350px, 60vw, 600px);
   padding: 2.5em 0.3em 0.25em 0.3em;
   border-radius: 2rem;
 }

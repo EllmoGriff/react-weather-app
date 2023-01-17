@@ -28,7 +28,7 @@ export default function Forecast(props) {
 				{forecastData.map(function (dailyForecast, index) {
 					if (index > 0 && index < 7) {
 						return (
-							< section className="forecast" key={index}>
+							< section key={index}>
 								<WeatherForecastDay data={dailyForecast} displayTemp={props.displayTemp} />
 							</section >
 						);

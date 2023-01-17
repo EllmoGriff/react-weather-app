@@ -7,23 +7,34 @@
 
 .sTemp,
 .minTemp {
-    font-size: 0.85rem;
+    font-size: clamp(0.75rem, 5vw, 1rem);
 }
 
 .minTemp {
-    font-weight: 300;
+    font-weight: 500;
 }
 
 .faren,
 .cels {
-    font-size: 3rem;
+    font-size: clamp(2rem, 5vw, 3.5rem);
     position: relative;
     bottom: 1rem;
+}
+
+.details-grid {
+    display: grid;
+    text-align: center;
+    max-width: 90%;
+    margin: auto;
 
 }
 
-.forecast {
-    max-width: 90%;
-    margin: auto;
-    text-align: center;
+@media (min-width: 45em) {
+    .details-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.small-icon {
+    padding-top: 0.35rem;
 }
