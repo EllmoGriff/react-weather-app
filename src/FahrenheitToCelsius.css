@@ -1,6 +1,7 @@
 .tempC,
 .tempF {
     background-color: transparent;
+    color: black;
     border: none;
     font-family: "Source Code Pro", monospace;
     font-weight: 600
@@ -17,7 +18,6 @@
 .f {
     text-align: center;
 }
-
 
 
 button.tempC:link,
